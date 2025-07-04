@@ -6,7 +6,7 @@
 
 ## About Me
 
-I am a Software Test Engineer with experience in functional, automation, performance testing, and quality management. I am dedicated to ensuring high-quality software and a great user experience.
+I am a Software Test Engineer with experience in functional, automation, performance testing, and quality management. I am dedicated to ensuring high-quality software and a great user experience. I am detail-oriented and proactive, with strong problem-solving skills and a passion for collaboration and continuous learning.
 
 Currently, I focus on testing LLMs, AI agents, and Machine Learning projects, with an emphasis on their reliability, accuracy, and security.
 
