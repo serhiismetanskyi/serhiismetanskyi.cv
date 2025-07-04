@@ -12,7 +12,7 @@ Currently, I focus on testing LLMs, AI agents, and Machine Learning projects, wi
 
 ## Skills & Tools
 
-- **Programming**: Python (FastAPI, Django)
+- **Programming**: Python (FastAPI, Django,	Pydantic, SQLAlchemy)
 - **Testing Frameworks**: Pytest, Unittest, Selenium, Playwright
 - **Communication Protocols**: REST API, gRPC, WebSockets
 - **Message Brokers**: AWS SNS/SQS
@@ -26,7 +26,7 @@ Currently, I focus on testing LLMs, AI agents, and Machine Learning projects, wi
 - **Cloud Platforms**: AWS (ECS, S3, Lambda)
 - **Logging & Monitoring**: AWS CloudWatch, OpenSearch, Elasticsearch/Kibana, Sentry, New Relic, Grafana, OpenLens
 - **Test Management**: TestRail
-- **Workflow Automation**: n8n
+- **Automation**: n8n, Cursor
 
 ## Experience
 
