@@ -1,8 +1,8 @@
-[About Me](#about-me) | [Skills & Tools](#skills--tools) | [Experience](#experience) | [Projects](#projects) | [Education](#education) | [Languages](#languages)
-
 **Software Test Engineer**  
 📍 Vinnytsia, Ukraine  
 🔗 [Telegram](https://t.me/serhiismetanskyi) | [LinkedIn](https://www.linkedin.com/in/serhiismetanskyi/) | [GitHub](https://github.com/serhiismetanskyi)
+
+[About Me](#about-me) | [Skills & Tools](#skills--tools) | [Experience](#experience) | [Projects](#projects) | [Education](#education) | [Languages](#languages)
 
 ## About Me
 
