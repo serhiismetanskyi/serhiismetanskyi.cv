@@ -30,7 +30,7 @@ Currently, I focus on testing LLMs, AI agents, and Machine Learning projects, wi
 
 ## Experience
 
-### [Namecheap, Inc](https://www.namecheap.com/)  
+### [Namecheap](https://www.namecheap.com/)  
 - **Release Coordinator**  
 *Jul 2023 – Present*
 
