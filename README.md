@@ -10,9 +10,11 @@ I am a Software Test Engineer with experience in functional, automation, perform
 
 Currently, I focus on testing LLMs, AI agents, and Machine Learning projects, with an emphasis on their reliability, accuracy, and security.
 
-## Skills
+## Skills & Tools
 
-- **Languages**: Python
+- **Languages and Frameworks**: Python (FastAPI, Django)
+- **CI / CD**: Jenkins, GitHub Actions
+- **Logging and Monitoring**: AWS CloudWatch, OpenSearch, Elasticsearch (Kibana), Sentry, New Relic, Grafana, OpenLens
 
 ## Experience
 
