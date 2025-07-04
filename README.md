@@ -12,10 +12,16 @@ Currently, I focus on testing LLMs, AI agents, and Machine Learning projects, wi
 
 ## Skills & Tools
 
-- **Languages and Frameworks**: Python (FastAPI, Django)
-- **CI / CD**: Jenkins, GitHub Actions
-- **Cloud**: AWS (EC2, SNS / SQS, S3, Lambda)
-- **Logging and Monitoring**: AWS CloudWatch, OpenSearch, Elasticsearch (Kibana), Sentry, New Relic, Grafana, OpenLens
+- **Languages & Frameworks**: Python (FastAPI, Django)
+- **Testing Tools & Frameworks**: Pytest, Unittest, Selenium, Playwright
+- **API Testing**: Requests, Postman, Swagger
+- **Load Testing**: Locust
+- **Databases**: PostgreSQL, SQLite
+- **CI/CD**: Jenkins, GitHub Actions
+- **Containers & DevOps**: Docker, Kubernetes
+- **Version Control**: Git
+- **Cloud Platforms**: AWS (EC2, SNS/SQS, S3, Lambda)
+- **Logging & Monitoring**: AWS CloudWatch, OpenSearch, Elasticsearch/Kibana, Sentry, New Relic, Grafana, OpenLens
 
 ## Experience
 
