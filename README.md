@@ -12,16 +12,21 @@ Currently, I focus on testing LLMs, AI agents, and Machine Learning projects, wi
 
 ## Skills & Tools
 
-- **Languages & Frameworks**: Python (FastAPI, Django)
-- **Testing Tools & Frameworks**: Pytest, Unittest, Selenium, Playwright
-- **API Testing**: Requests, Postman, Swagger
+- **Programming**: Python (FastAPI, Django)
+- **Testing Frameworks**: Pytest, Unittest, Selenium, Playwright
+- **Communication Protocols**: REST API, gRPC, WebSockets
+- **Message Brokers**: AWS SNS/SQS
+- **API Testing Tools**: Requests, Postman, Swagger, Fiddler, Chrome DevTools
 - **Load Testing**: Locust
+- **LLMs & AI**: Prompt engineering, OpenAI API, Gemini API, automated and manual evaluation of LLM outputs
 - **Databases**: PostgreSQL, SQLite
 - **CI/CD**: Jenkins, GitHub Actions
 - **Containers & DevOps**: Docker, Kubernetes
-- **Version Control**: Git
-- **Cloud Platforms**: AWS (EC2, SNS/SQS, S3, Lambda)
+- **Version Control**: Git (GitHub, GitLab, Bitbucket)
+- **Cloud Platforms**: AWS (ECS, S3, Lambda)
 - **Logging & Monitoring**: AWS CloudWatch, OpenSearch, Elasticsearch/Kibana, Sentry, New Relic, Grafana, OpenLens
+- **Test Management**: TestRail
+- **Workflow Automation**: n8n
 
 ## Experience
 
