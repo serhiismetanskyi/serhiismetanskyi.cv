@@ -1,3 +1,6 @@
+**[About Me](#about-me) | [Skills & Tools](#skills--tools) | [Experience](#experience) | [Projects](#projects) | [Education](#education) | [Languages](#languages)**
+
+
 # Serhii Smetanskyi
 
 **Software Test Engineer**  
