@@ -1,7 +1,4 @@
-**[About Me](#about-me) | [Skills & Tools](#skills--tools) | [Experience](#experience) | [Projects](#projects) | [Education](#education) | [Languages](#languages)**
-
-
-# Serhii Smetanskyi
+[About Me](#about-me) | [Skills & Tools](#skills--tools) | [Experience](#experience) | [Projects](#projects) | [Education](#education) | [Languages](#languages)
 
 **Software Test Engineer**  
 📍 Vinnytsia, Ukraine  
