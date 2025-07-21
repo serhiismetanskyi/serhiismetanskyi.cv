@@ -1,4 +1,4 @@
-# Serhii Smetanskyi
+## Serhii Smetanskyi
 
 **Software Test Engineer**  
 📍 Vinnytsia, Ukraine  
