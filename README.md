@@ -27,6 +27,7 @@ Currently, I focus on testing LLMs, AI agents, and Machine Learning projects, wi
 - **Logging & Monitoring**: AWS CloudWatch, OpenSearch, Elasticsearch/Kibana, Sentry, New Relic, Grafana, OpenLens
 - **Test Management**: TestRail
 - **Automation**: n8n, Cursor
+- **Documentation**: Architectural Documentation, SRS, Technical Specifications, API Contracts, Test Documentation
 
 ## Experience
 
@@ -54,22 +55,31 @@ Currently, I focus on testing LLMs, AI agents, and Machine Learning projects, wi
 
 ## Projects
 
-### [database_tests_with_sqlalchemy](https://github.com/serhiismetanskyi/database_tests_with_sqlalchemy)  
+[Automations](###automations) | [Tests](###tests)
+
+### Automations
+
+#### [AI Agents](https://a8n.serhiismetanskyi.cv/#cases)
+Custom AI agents designed to automate repetitive workflows, work with data, and connect systems through APIs.
+
+### Tests
+
+#### [database_tests_with_sqlalchemy](https://github.com/serhiismetanskyi/database_tests_with_sqlalchemy)  
 Automated database testing framework using SQLAlchemy and Python. Designed to validate data integrity, schema constraints, and transactional behavior in relational databases.
 
-### [petstore_load_tests](https://github.com/serhiismetanskyi/petstore_load_tests)  
+#### [petstore_load_tests](https://github.com/serhiismetanskyi/petstore_load_tests)  
 Performance and load testing suite for the PetStore API. Uses tools like Locust to simulate concurrent users and monitor system behavior under stress.
 
-### [testme_load_tests](https://github.com/serhiismetanskyi/testme_load_tests)  
+#### [testme_load_tests](https://github.com/serhiismetanskyi/testme_load_tests)  
 Load testing project targeting the TestMe web application. Helps identify performance bottlenecks and ensures system stability at scale.
 
-### [serverest_api_tests](https://github.com/serhiismetanskyi/serverest_api_tests)  
+#### [serverest_api_tests](https://github.com/serhiismetanskyi/serverest_api_tests)  
 Automated API tests for the ServeRest API. Covers CRUD operations, authentication scenarios, and error handling using Python-based testing tools.
 
-### [restfulbooker_api_tests](https://github.com/serhiismetanskyi/restfulbooker_api_tests)  
+#### [restfulbooker_api_tests](https://github.com/serhiismetanskyi/restfulbooker_api_tests)  
 End-to-end API testing for the Restful Booker application. Focuses on functional validation, response verification, and robustness of the booking flow.
 
-### [saucedemo_ui_tests](https://github.com/serhiismetanskyi/saucedemo_ui_tests)  
+#### [saucedemo_ui_tests](https://github.com/serhiismetanskyi/saucedemo_ui_tests)  
 UI automation test suite for the SauceDemo e-commerce platform. Implements key scenarios like login, product selection, and checkout using Selenium.
 
 
