@@ -1,3 +1,5 @@
+# Serhii Smetanskyi
+
 **Software Test Engineer**  
 📍 Vinnytsia, Ukraine  
 🔗 [Telegram](https://t.me/serhiismetanskyi) | [LinkedIn](https://www.linkedin.com/in/serhiismetanskyi/) | [GitHub](https://github.com/serhiismetanskyi)
