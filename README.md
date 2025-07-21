@@ -55,7 +55,7 @@ Currently, I focus on testing LLMs, AI agents, and Machine Learning projects, wi
 
 ## Projects
 
-[Automations](###automations) | [Tests](###tests)
+[Automations](#automations) | [Tests](#tests)
 
 ### Automations
 
