@@ -95,4 +95,3 @@ Vinnytsa Institute of Trade and Economics
 - Ukrainian — Native
 
 © 2025 Serhii Smetanskyi
-
