@@ -1,3 +1,5 @@
+![avatar](avatar.jpeg)
+
 ## Serhii Smetanskyi
 
 **Software Test and Automation Engineer**  
