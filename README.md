@@ -4,7 +4,7 @@
 
 **Software Test and Automation Engineer**  
 📍 Vinnytsia, Ukraine  
-🔗 [Telegram](https://t.me/serhiismetanskyi) | [LinkedIn](https://www.linkedin.com/in/serhiismetanskyi) | [GitHub](https://github.com/serhiismetanskyi) | [Blog](https://blog.serhiismetanskyi.cv)
+🔗 [Telegram](https://t.me/serhiismetanskyi) | [LinkedIn](https://www.linkedin.com/in/serhiismetanskyi) | [GitHub](https://github.com/serhiismetanskyi)
 
 [About](#about) | [Skills](#skills) | [Experience](#experience) | [Projects](#projects) | [Education](#education) | [Languages](#languages)
 
