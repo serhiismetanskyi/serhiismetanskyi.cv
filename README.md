@@ -27,7 +27,7 @@ Currently, I focus on testing LLMs, AI agents, and Machine Learning projects, wi
 - **CI/CD**: Jenkins, GitHub Actions
 - **Containers & DevOps**: Docker, Kubernetes
 - **Version Control**: Git (GitHub, GitLab, Bitbucket)
-- **Cloud Platforms**: AWS (ECS, S3, Lambda)
+- **Cloud Platforms**: AWS (EC2, ECS, S3, Lambda)
 - **Logging & Monitoring**: AWS CloudWatch, OpenSearch, Elasticsearch/Kibana, Sentry, New Relic, Grafana, OpenLens
 - **Test Management**: TestRail
 - **Automation**: n8n, Cursor
