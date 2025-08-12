@@ -18,7 +18,7 @@ Currently, I focus on testing LLMs, AI agents, and Machine Learning projects, wi
 
 - **Programming**: Python (FastAPI, Django,	Pydantic, SQLAlchemy)
 - **Testing Frameworks**: Pytest, Unittest, Selenium, Playwright
-- **Communication Protocols**: REST API, gRPC, WebSockets
+- **Communication Protocols**: REST API, gRPC, WebSockets, GraphQL
 - **Message Brokers**: AWS SNS/SQS
 - **API Testing Tools**: Requests, Postman, Swagger, Fiddler, Chrome DevTools
 - **Load Testing**: Locust
