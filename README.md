@@ -36,26 +36,28 @@ Currently, I focus on testing LLMs, AI agents, and Machine Learning projects, wi
 ## Experience
 
 ### [Namecheap](https://www.namecheap.com/)  
-- **Release Coordinator**  
-*Jul 2023 – Present*
+- **Release Coordinator**  | *Jul 2023 – Present*
 
-- **General Backend QA Engineer**  
-*Apr 2023 – Present*
+- **General Backend QA Engineer** | *Apr 2023 – Present*
 
 ### [airSlate](https://www.airslate.com/)  
-- **QA Engineer**  
-*Jun 2022 – Apr 2023*
+- **QA Engineer** | *Jun 2022 – Apr 2023*
+
+Led manual testing of web and mobile applications using diverse approaches to ensure product quality and compliance with requirements. Designed and maintained test cases and documentation, analyzed specifications, monitored coverage, and supported automated test execution and troubleshooting. Managed defect lifecycle, contributed to release and maintenance as Release QA and Maintenance QA, prioritized tasks, supported customers, conducted stakeholder demos, and actively engaged in Agile ceremonies to ensure timely, high-quality delivery.
 
 ### [soft Xpansion](https://softxpansion.global/)  
-- **Business Analyst**  
-*Jan 2020 – Jun 2022*
+- **Business Analyst** | *Jan 2020 – Jun 2022*
 
-- **QA Engineer**  
-*Sep 2019 – Jun 2022*
+Led the design and development of business processes and software logic, driving product improvements through new feature innovation. Collaborated with stakeholders to analyze requirements, decompose them into actionable tasks, and manage the backlog, while planning sprints and releases. Managed change requests, supported development processes, and ensured deadlines were met. Authored specifications and technical documentation, prepared presentations, guides, and release notes, and modeled processes using UML and BPMN 2.0. Created wireframes, mock-ups, and UI/UX prototypes to support product design and enhance user experience.
+
+- **QA Engineer** | *Sep 2019 – Jun 2022*
+
+Led QA for multiple web applications, performing manual testing with diverse methodologies, designing and executing test cases, managing defects, and maintaining detailed test documentation. Analyzed requirements, proactively identified potential quality issues, and provided actionable feedback to stakeholders and cross-functional teams. Owned QA process development, mentored team members, and supported customers through ticket resolution, demonstrations, and training to drive continuous quality improvement.
 
 ### [Secom Support](https://secom.com.ua/en)  
-- **Technical Engineer**  
-*Feb 2019 – Jul 2019*
+- **Technical Engineer** | *Feb 2019 – Jul 2019*
+
+Led technical support and maintenance of web servers, ensuring reliability, scalability, and performance of infrastructure. Oversaw installation, configuration, and administration of Linux and Windows servers, managed monitoring systems, and executed data migrations with minimal downtime. Collaborated with customers to resolve complex tickets, driving improvements in service quality and response efficiency. Authored and maintained technical documentation to standardize processes and support knowledge sharing across the team.
 
 ## Projects
 
