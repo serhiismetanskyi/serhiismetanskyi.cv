@@ -48,7 +48,7 @@ Performed manual testing of web and mobile applications to ensure product qualit
 ### [soft Xpansion](https://softxpansion.global/)  
 - **Business Analyst** *Jan 2020 – Jun 2022*
 
-Designed and developed business processes and software logic to improve the product with new features. Collaborated with stakeholders to gather and analyze requirements, decompose them into tasks, manage the backlog, and plan sprints and releases. Managed change requests, supported development activities, and ensured deadlines were met. Created specifications, documentation, presentations, guides, and release notes, modeled processes using UML and BPMN, and created wireframes, mockups, and UI/UX prototypes to enhance product design and user experience.
+Automated client's business processes by developing and implementing product-based solutions. Enhanced software products by extending their logic with new features. Collaborated with stakeholders to gather and analyze requirements, split them into tasks, manage the backlog, and plan sprints and releases. Oversaw change requests, supported development, and ensured timely delivery. Produced specifications, documentation, presentations, guides, and release notes. Modeled workflows with UML and BPMN, and built wireframes, mockups, and UI/UX prototypes to improve product design and user experience.
 
 - **QA Engineer** *Sep 2019 – Jun 2022*
 
