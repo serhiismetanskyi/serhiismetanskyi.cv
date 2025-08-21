@@ -52,12 +52,12 @@ Automated client's business processes by developing and implementing product-bas
 
 - **QA Engineer** *Sep 2019 – Jun 2022*
 
-Managed QA for multiple web applications, performing manual testing using various methodologies, designing and executing test cases, managing defects, and maintaining detailed test documentation. Analyzed requirements, identified potential quality issues, and provided actionable feedback to stakeholders and cross-functional teams. Developed QA processes, mentored team members, and supported customers through ticket resolution, demonstrations, and training to ensure continuous quality improvement.
+Handled QA for multiple web applications by performing manual testing, designing and executing test cases, managing defects, and keeping detailed test documentation. Analyzed requirements, spotted potential quality issues, and gave actionable feedback to stakeholders and cross-functional teams. Developed QA processes, mentored team members, and supported customers through ticket resolution, demos, and training to ensure continuous quality improvement.
 
 ### [Secom Support](https://secom.com.ua/en)  
 - **Technical Engineer** *Feb 2019 – Jul 2019*
 
-Executed technical support and maintenance of web servers, ensuring reliability, scalability, and performance of the infrastructure. Oversaw installation, configuration, and administration of Linux and Windows servers, managed monitoring systems, and executed data migrations with minimal downtime. Collaborated with customers to resolve complex tickets, improving service quality and response efficiency. Created and maintained technical documentation to standardize processes and support knowledge sharing across the team.
+Provided technical support and maintenance for web servers, ensuring reliable, scalable, and high-performing infrastructure. Managed installation, configuration, and administration of Linux and Windows servers, monitored systems, and performed data migrations with minimal downtime. Worked with customers to resolve technical tickets. Created and maintained technical documentation to standardize processes and share knowledge across the team.
 
 ## Projects
 
