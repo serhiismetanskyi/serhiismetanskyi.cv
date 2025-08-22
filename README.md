@@ -38,7 +38,11 @@ Currently, I focus on testing LLMs, AI agents, and Machine Learning projects, wi
 ### [Namecheap](https://www.namecheap.com/)  
 - **Release Coordinator** — *Jul 2023 – Present*
 
+I manage and coordinate software releases, ensuring timely and high-quality deployments across multiple environments. I collaborate with cross-functional teams, track release progress, identify and mitigate risks, and maintain comprehensive release documentation. I perform post-release monitoring to ensure system stability and performance, and coordinate between development, QA, and operations teams to ensure smooth and reliable delivery.
+
 - **General Backend QA Engineer** — *Apr 2023 – Present*
+
+I perform backend quality assurance by designing, executing, and maintaining comprehensive test plans and cases for APIs, databases, and server-side logic. I analyze requirements, track test coverage, identify defects, and ensure they are resolved efficiently. I support both manual and automated testing, troubleshoot complex issues, and collaborate closely with developers and stakeholders to ensure high-quality backend systems and stable releases. Additionally, I contribute to ML/AI projects by validating model outputs, testing data pipelines, and ensuring reliability and accuracy of AI-driven features.
 
 ### [airSlate](https://www.airslate.com/)  
 - **QA Engineer** — *Jun 2022 – Apr 2023*
