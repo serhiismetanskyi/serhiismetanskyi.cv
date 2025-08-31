@@ -104,4 +104,6 @@ Vinnytsa Institute of Trade and Economics
 - English — Intermediate  
 - Ukrainian — Native
 
+![qa_cover](qa_cover.png)
+
 © 2025 Serhii Smetanskyi
