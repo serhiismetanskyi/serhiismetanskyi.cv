@@ -22,7 +22,7 @@ Currently, I focus on testing LLMs, AI agents, and Machine Learning projects, wi
 - **Message Brokers**: AWS SNS/SQS
 - **API Testing Tools**: Requests, Postman, Swagger, Fiddler, Chrome DevTools
 - **Load Testing**: Locust
-- **LLMs & AI**: Prompt engineering, prompt injection techniques, prompt evaluation metrics and benchmarks, OpenAI API, Gemini API, automated and manual evaluation of LLM outputs, creation of AI agents using RAG and integrated tools
+- **LLMs & AI**: Prompt engineering, prompt injection techniques, prompt evaluation metrics and benchmarks, OpenAI API, Gemini API, automated and manual evaluation of LLM outputs, agentic architectures, creation of AI agents using RAG and integrated tools
 - **Databases**: PostgreSQL, SQLite
 - **CI/CD**: Jenkins, GitHub Actions
 - **Containers & DevOps**: Docker, Kubernetes
