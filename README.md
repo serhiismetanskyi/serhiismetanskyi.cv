@@ -8,6 +8,8 @@
 
 [About](#about) | [Skills](#skills) | [Experience](#experience) | [Projects](#projects) | [Education](#education) | [Languages](#languages)
 
+---
+
 ## About
 
 I am a Software Test Engineer with experience in functional, automation, performance testing, and quality management. I am dedicated to ensuring high-quality software and a great user experience. I am detail-oriented and proactive, with strong problem-solving skills and a passion for collaboration and continuous learning.
@@ -105,5 +107,7 @@ Vinnytsa Institute of Trade and Economics
 - Ukrainian — Native
 
 ![cover](cover.png)
+
+---
 
 © 2025 Serhii Smetanskyi
