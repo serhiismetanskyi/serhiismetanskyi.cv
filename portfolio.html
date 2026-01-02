@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <title>Serhii Smetanskyi – Automation Engineer • AI Agent Builder • Workflow Designer</title>
+      <meta name="description" content="Portfolio of Serhii Smetanskyi: Automation Engineer specializing in AI agents and automated workflows." />
+      <link rel="canonical" href="https://serhiismetanskyi.cvportfolio.html" />
+      <link rel="icon" href="/favicon.ico" sizes="32x32">
+      <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+      <!-- Water.css (light) -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.min.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      <!-- Main CSS -->
+      <link rel="stylesheet" href="css/main.css">
+      <style>
+         .case-image {
+         max-width: 100%;
+         height: auto;
+         margin: 1rem 0;
+         border-radius: 4px;
+         }
+         .youtube-btn {
+         display: inline-flex;
+         align-items: center;
+         gap: 0.5rem;
+         padding: 0.5rem 1rem;
+         background-color: var(--background-alt);
+         border: 1px solid var(--border);
+         border-radius: 4px;
+         text-decoration: none;
+         color: var(--text);
+         transition: all 0.2s;
+         font-size: 0.9em;
+         }
+         .youtube-btn:hover {
+         background-color: var(--background);
+         border-color: var(--text-muted);
+         }
+         .youtube-btn i {
+         color: var(--text-muted);
+         }
+         .case-section {
+         display: none;
+         }
+         .case-section.active {
+         display: block;
+         }
+         #cases nav a {
+         cursor: pointer;
+         }
+         #cases nav a.active {
+         font-weight: bold;
+         }
+      </style>
+      <!-- Open Graph -->
+      <meta property="og:title" content="Serhii Smetanskyi – Automation Engineer" />
+      <meta property="og:description" content="Portfolio of Serhii Smetanskyi: Automation Engineer specializing in AI agents and automated workflows." />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://serhiismetanskyi.cvportfolio.html" />
+      <meta property="og:image" content="img/profilepic.jpeg" />
+      <!-- Twitter -->
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content="Serhii Smetanskyi – Automation Engineer" />
+      <meta name="twitter:description" content="Portfolio of Serhii Smetanskyi: Automation Engineer." />
+      <!-- Structured Data -->
+      <script type="application/ld+json">
+         {
+           "@context": "https://schema.org",
+           "@type": "Person",
+           "name": "Serhii Smetanskyi",
+           "jobTitle": "Automation Engineer • AI Agent Builder • Workflow Designer",
+           "url": "https://serhiismetanskyi.cv/",
+           "image": "img/profilepic.jpeg",
+           "description": "Automation Engineer specializing in AI agents and automated workflows",
+           "sameAs": [
+             "https://www.linkedin.com/in/serhiismetanskyi",
+             "https://github.com/serhiismetanskyi",
+             "https://t.me/serhiismetanskyi"
+           ]
+         }
+      </script>
+   </head>
+   <body>
+      <nav class="main-nav">
+         <ul>
+            <li><a href="index.html">Bio</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+         </ul>
+      </nav>
+      <header>
+         <img src="img/profilepic.jpeg" alt="Serhii Smetanskyi">
+         <h1>Serhii Smetanskyi</h1>
+         <p><strong>Automation Engineer • AI Agent Builder • Workflow Designer</strong></p>
+      </header>
+      <nav>
+         <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#cases">Cases</a></li>
+            <li><a href="#contact">Contact</a></li>
+         </ul>
+      </nav>
+      <main>
+         <section id="about">
+            <h2>About</h2>
+            <p>
+               I'm an Automation Engineer with a strong background in Quality Assurance and Software Development. I specialize in creating AI agents and Automated Workflows that eliminate routine tasks, optimize processes, and reduce time and resource waste.
+            </p>
+            <p>
+               With hands-on experience in Software Development, I design automations that are not only efficient — but also robust, scalable, and easy to maintain.
+            </p>
+            <p>
+               I build automations that run 24/7, reliably and autonomously — no manual input required.
+            </p>
+            <p>
+               I keep it simple — using only the tools that fit your goals and make things easier.
+         </section>
+         <section id="services">
+            <h2>Services</h2>
+            <ul>
+               <li>
+                  <strong>Web Scraping and Parsing</strong>
+                  <p>Flexible solutions for structuring and consolidating data collected from open unstructured sources.</p>
+               </li>
+               <li>
+                  <strong>AI Agents and Assistance</strong>
+                  <p>AI-powered chatbots and workflows built on your own data for natural, human-like conversations.</p>
+               </li>
+               <li>
+                  <strong>Business Process and Routine Automation</strong>
+                  <p>Automating routine tasks and business processes to enhance productivity and reduce operational costs.</p>
+               </li>
+               <li>
+                  <strong>Integrations</strong>
+                  <p>Connecting diverse applications and APIs for streamlined data exchange and workflow efficiency.</p>
+               </li>
+            </ul>
+         </section>
+         <section id="cases">
+            <h2>Cases</h2>
+            <nav>
+               <ul>
+                  <li><a href="#" data-tab="reminders" class="case-tab">Reminders</a></li>
+                  <li><a href="#" data-tab="management" class="case-tab">Management</a></li>
+                  <li><a href="#" data-tab="testing" class="case-tab">Testing</a></li>
+                  <li><a href="#" data-tab="finance" class="case-tab">Finance</a></li>
+                  <li><a href="#" data-tab="content" class="case-tab">Content</a></li>
+                  <li><a href="#" data-tab="tools" class="case-tab">Tools</a></li>
+                  <li><a href="#" data-tab="parsers" class="case-tab">Parsers</a></li>
+               </ul>
+            </nav>
+            <div class="case-section" data-section="reminders">
+               <h3 id="reminders">Reminders</h3>
+               <ul>
+                  <li><a href="#smart-doc-notifier-agent">Smart Doc Notifier Agent</a></li>
+               </ul>
+               <h4 id="smart-doc-notifier-agent">Smart Doc Notifier Agent</h4>
+               <img src="img/smartdocnotifier.png" alt="Smart Doc Notifier Agent" class="case-image">
+               <p>
+                  Smart Doc Notifier Agent is an intelligent automation system designed to act as a smart notifier assistant for legal documentation from state registries. The agent automatically scans legal documents from state registries, uses AI to detect required attributes, verify that they meet the necessary rules, and identify any missing documents, then sends context-based email notifications to the user.
+               </p>
+               <p>
+                  Smart Doc Notifier Agent is a tool that helps lawyers and finance specialists keep track of changes in monitored documents, making sure they always know about updates and critical information.
+               </p>
+               <p>
+                  <a href="https://youtu.be/" target="_blank" class="youtube-btn"><i class="fa-brands fa-youtube"></i> Demo on Youtube</a>
+               </p>
+               <p><strong>Features</strong></p>
+               <ul>
+                  <li>Automatic monitoring of legal documents from state registries</li>
+                  <li>AI-powered analysis to detect required attributes and ensure they meet the rules</li>
+                  <li>Identification of missing or incomplete documents relevant to legal or financial processes</li>
+                  <li>Context-based email notifications to responsible users</li>
+                  <li>Personalized alerts based on document type, status, and urgency</li>
+                  <li>Continuous tracking of changes and updates in monitored documents</li>
+                  <li>Control to customize document analysis and notification rules for each document type</li>
+                  <li>Detailed logging of all document checks and alerts</li>
+                  <li>Smart prioritization of notifications based on criticality and deadlines</li>
+               </ul>
+               <p class="tech-stack"><strong>Tech Stack</strong> <span class="tech-tag">n8n</span> <span class="tech-tag">GPT-5</span> <span class="tech-tag">Google Docs</span> <span class="tech-tag">Email</span></p>
+            </div>
+            <div class="case-section" data-section="management">
+               <h3 id="management">Management</h3>
+               <ul>
+                  <li><a href="#seo-task-creator-agent">SEO Task Creator Agent</a></li>
+               </ul>
+               <h4 id="seo-task-creator-agent">SEO Task Creator Agent</h4>
+               <img src="img/seotaskcreatoragent.png" alt="SEO Task Creator Agent" class="case-image">
+               <p>
+                  SEO Task Creator Agent is an intelligent automation system that seamlessly connects SEO specialists and copywriters, transforming task creation and content management into a fully streamlined process. It operates as a comprehensive task management system, where human experts and AI agents work together in a single coordinated workflow, managing every stage from task initiation to content generation and final approval.
+               </p>
+               <p>
+                  The agent automatically creates SEO content briefs (Technical Specifications) in Google Docs with all essential SEO attributes and details — keywords, competitor analysis, LSI suggestions, metadata, and structured content checklists — to fully automate the process of assigning tasks to copywriters while accounting for all SEO requirements and project-specific guidelines.
+               </p>
+               <p>
+                  <a href="https://youtu.be/lFKhpE-BZ-4" target="_blank" class="youtube-btn"><i class="fa-brands fa-youtube"></i> Demo on Youtube</a>
+               </p>
+               <p><strong>Features</strong></p>
+               <ul>
+                  <li>Single point of task management directly in the messenger</li>
+                  <li>Smart coordination between SEO specialists, copywriters, and AI agents</li>
+                  <li>Automatic task status management across all workflow stages</li>
+                  <li>Dynamic deadline calculation based on task priority and context</li>
+                  <li>Automatic determination of the next workflow stage based on current task status</li>
+                  <li>Automatically analyzes competitor pages to gather insights, content structure, and keywords for AI-generated content</li>
+                  <li>Automatic SEO brief generation in Google Docs with full metadata and keyword context</li>
+                  <li>Primary and secondary automated content validation according to predefined quality checklists</li>
+                  <li>AI-powered recommendations for SEO optimization, keyword usage, and structure</li>
+                  <li>Automatic content improvement and refinement using LLM-powered analysis</li>
+                  <li>Overdue task alerts to administrators when status remains unchanged for >24 hours</li>
+                  <li>Full user management with role-based access control and permissions</li>
+                  <li>Prompt management module for AI agents to customize generation rules per project</li>
+                  <li>Comprehensive logging and action tracking across the system</li>
+                  <li>Intelligent, role-based and personalized notifications throughout all workflow stages</li>
+               </ul>
+               <p class="tech-stack"><strong>Tech Stack</strong> <span class="tech-tag">n8n</span> <span class="tech-tag">GPT-4o</span> <span class="tech-tag">FireCrawl</span> <span class="tech-tag">Google Docs</span> <span class="tech-tag">Telegram</span></p>
+            </div>
+            <div class="case-section" data-section="testing">
+               <h3 id="testing">Testing</h3>
+               <ul>
+                  <li><a href="#postman-tests-generator-agent">Postman Tests Generator Agent</a></li>
+               </ul>
+               <h4 id="postman-tests-generator-agent">Postman Tests Generator Agent</h4>
+               <img src="img/postmantestgenagent.png" alt="Postman Tests Generator Agent" class="case-image">
+               <p>
+                  Postman Tests Generator Agent is an AI-powered tool that automatically transforms your OpenAPI/Swagger specifications into structured Postman collections with comprehensive tests, validations, and smart organization. It streamlines API testing and saves valuable time for developers and QA teams.
+               </p>
+               <p>
+                  <a href="https://youtu.be/ujOUqwBA5Uw" target="_blank" class="youtube-btn"><i class="fa-brands fa-youtube"></i> Demo on Youtube</a>
+               </p>
+               <p><strong>Features</strong></p>
+               <ul>
+                  <li>Upload API spec file or describe your API in plain English via Telegram bot</li>
+                  <li>Deep API analysis with intelligent parsing of OpenAPI/Swagger specs</li>
+                  <li>AI-powered processing of API structure into detailed Postman test scenarios</li>
+                  <li>Automatic creation of complete Postman test collections with production-ready coverage</li>
+                  <li>Automatic generation of Postman environments with predefined variables</li>
+                  <li>Smart organization of requests with logical folder structures and endpoint grouping</li>
+                  <li>Comprehensive test generation (positive, negative, edge case scenarios)</li>
+                  <li>JSON schema validation for request and response bodies</li>
+                  <li>Automatic setup of environment variables (base URLs, API keys, configurable values)</li>
+                  <li>Ready-to-use Postman collection export for instant usage</li>
+                  <li>Automatic import into Postman of generated collections with tests and environments</li>
+               </ul>
+               <p class="tech-stack"><strong>Tech Stack</strong> <span class="tech-tag">n8n</span> <span class="tech-tag">Gemini</span> <span class="tech-tag">Postman</span> <span class="tech-tag">Telegram</span></p>
+            </div>
+            <div class="case-section" data-section="finance">
+               <h3 id="finance">Finance</h3>
+               <ul>
+                  <li><a href="#cost-tracker-agent">Cost Tracker Agent</a></li>
+               </ul>
+               <h4 id="cost-tracker-agent">Cost Tracker Agent</h4>
+               <img src="img/costtrackeragent.png" alt="Cost Tracker Agent" class="case-image">
+               <p>
+                  Cost Tracker Agent is an AI-powered system that manages your expenses automatically. It records expenses from natural language, sorts them by category and vendor, gathers the data, and provides clear financial insights, giving you full control of your finances in real time.
+               </p>
+               <p>
+                  <a href="https://youtu.be/5PF7ox-uqhc" target="_blank" class="youtube-btn"><i class="fa-brands fa-youtube"></i> Demo on Youtube</a>
+               </p>
+               <p><strong>Features</strong></p>
+               <ul>
+                  <li>Integration with messengers</li>
+                  <li>Automatic classification of user requests into expense recording or data retrieval</li>
+                  <li>Natural language processing for extracting expense data from user messages</li>
+                  <li>Intelligent request classification and routing</li>
+                  <li>AI-powered category and vendor creation and management from user input</li>
+                  <li>Intelligent vendor recognition with automatic vendor profile creation</li>
+                  <li>Conversion of natural language queries into precise SQL database queries</li>
+                  <li>Advanced expense filtering and retrieval via SQL query generation</li>
+                  <li>Comprehensive spending analytics with category and vendor breakdowns</li>
+                  <li>Data isolation and privacy protection through chat-based filtering</li>
+               </ul>
+               <p class="tech-stack"><strong>Tech Stack</strong> <span class="tech-tag">n8n</span> <span class="tech-tag">Gemini</span> <span class="tech-tag">PostgreSQL</span> <span class="tech-tag">Telegram</span></p>
+            </div>
+            <div class="case-section" data-section="content">
+               <h3 id="content">Content</h3>
+               <ul>
+                  <li><a href="#content-creator-agent">Content Creator Agent</a></li>
+               </ul>
+               <h4 id="content-creator-agent">Content Creator Agent</h4>
+               <img src="img/contentcreatoragent.png" alt="Content Creator Agent" class="case-image">
+               <p>
+                  Content Creator Agent is an AI-driven, fully autonomous end-to-end system for SEO content generation, handling everything from creating trending content to automatic website posting.
+               </p>
+               <p>
+                  <a href="https://youtu.be/Iv2PuO7kMPk" target="_blank" class="youtube-btn"><i class="fa-brands fa-youtube"></i> Demo on Youtube</a>
+               </p>
+               <p><strong>Features</strong></p>
+               <ul>
+                  <li>Integration with messengers</li>
+                  <li>Website analysis by LLM to identify content topics based on business niche</li>
+                  <li>Trend analysis via Perplexity AI to generate content ideas based on business niche</li>
+                  <li>Automated SEO content plan generation powered by LLM</li>
+                  <li>SEO content writing by LLM based on the content plan</li>
+                  <li>Content analysis and validation using specialized AI agent</li>
+                  <li>SEO scoring by an AI agent to evaluate content quality, keyword usage, structure, and optimization level</li>
+                  <li>Preliminary content review available via Google Docs before publishing</li>
+                  <li>Automatic publishing to WordPress sites</li>
+                  <li>Option for manual content posting to WordPress after review</li>
+               </ul>
+               <p class="tech-stack"><strong>Tech Stack</strong> <span class="tech-tag">n8n</span> <span class="tech-tag">GPT-4o</span> <span class="tech-tag">Perplexity</span> <span class="tech-tag">Google Docs</span> <span class="tech-tag">Wordpress</span> <span class="tech-tag">Telegram</span></p>
+            </div>
+            <div class="case-section" data-section="tools">
+               <h3 id="tools">Tools</h3>
+               <ul>
+                  <li><a href="#progress-reporter-agent">Progress Reporter Agent</a></li>
+                  <li><a href="#bug-creator-agent">Bug Creator Agent</a></li>
+               </ul>
+               <h4 id="progress-reporter-agent">Progress Reporter Agent</h4>
+               <img src="img/progressreporteragent.png" alt="Progress Reporter Agent" class="case-image">
+               <p>
+                  Progress Reporter Agent is a fully autonomous AI agent that collects, analyzes, and delivers structured project updates — saving time and keeping teams and stakeholders aligned.
+               </p>
+               <p>
+                  <a href="https://youtu.be/viRawoJhy3A" target="_blank" class="youtube-btn"><i class="fa-brands fa-youtube"></i> Demo on Youtube</a>
+               </p>
+               <p><strong>Features</strong></p>
+               <ul>
+                  <li>Integration with messengers</li>
+                  <li>Understands user requests to identify the context needed for the report</li>
+                  <li>Automated task extraction from Jira based on filters (project, date range, sprint, etc.)</li>
+                  <li>Collects metrics based on data gathered from Jira</li>
+                  <li>AI-generated summaries of task progress, blockers, and key updates</li>
+                  <li>Visual reports with charts and dashboards made by Metabase</li>
+                  <li>Enables dynamic interaction with reports for filtering progress data and metrics</li>
+                  <li>Full automation of the reporting workflow</li>
+               </ul>
+               <p class="tech-stack"><strong>Tech Stack</strong> <span class="tech-tag">n8n</span> <span class="tech-tag">GPT-4o</span> <span class="tech-tag">PostgreSQL</span> <span class="tech-tag">Jira</span> <span class="tech-tag">Metabase</span> <span class="tech-tag">Telegram</span></p>
+               <h4 id="bug-creator-agent">Bug Creator Agent</h4>
+               <img src="img/bugcreatoragent.png" alt="Bug Creator Agent" class="case-image">
+               <p>
+                  Bug Creator Agent is an autonomous AI agent that automates the creation of bug reports in Jira.
+               </p>
+               <p>
+                  <a href="https://youtu.be/z_TGHZrp938" target="_blank" class="youtube-btn"><i class="fa-brands fa-youtube"></i> Demo on Youtube</a>
+               </p>
+               <p><strong>Features</strong></p>
+               <ul>
+                  <li>Integration with messengers</li>
+                  <li>Recognition of input text or Google Docs containing problem descriptions</li>
+                  <li>Dynamic processing flow based on request content</li>
+                  <li>Ticket content generated by an LLM based on a predefined template</li>
+                  <li>Possibility of preliminary ticket review via Google Docs</li>
+                  <li>Ticket creation in Jira</li>
+               </ul>
+               <p class="tech-stack"><strong>Tech Stack</strong> <span class="tech-tag">n8n</span> <span class="tech-tag">GPT-4o</span> <span class="tech-tag">Jira</span> <span class="tech-tag">Google Docs</span> <span class="tech-tag">Telegram</span></p>
+            </div>
+            <div class="case-section" data-section="parsers">
+               <h3 id="parsers">Parsers</h3>
+               <ul>
+                  <li><a href="#government-data-parser">Government Data Parser</a></li>
+               </ul>
+               <h4 id="government-data-parser">Government Data Parser</h4>
+               <img src="img/governmentdataparser.png" alt="Government Data Parser" class="case-image">
+               <p>
+                  Government Data Parser is a tool that automates data retrieval from government registries, streamlining access to official information and documents. It provides a fully automated pipeline for monitoring, collecting, and managing registry data, ensuring accuracy, compliance, and efficiency.
+               </p>
+               <p>
+                  <a href="https://youtu.be/UwF0Vi9AaRA" target="_blank" class="youtube-btn"><i class="fa-brands fa-youtube"></i> Demo on Youtube</a>
+               </p>
+               <p><strong>Features</strong></p>
+               <ul>
+                  <li>Integration with messengers</li>
+                  <li>Fully automated process for retrieving data from multiple government registries</li>
+                  <li>Continuous monitoring of registries for new or updated information with instant notifications</li>
+                  <li>Document downloader that retrieves files based on type, ownership, and registry classification</li>
+                  <li>Validation checks at every stage to prevent duplicates and maintain data integrity</li>
+                  <li>Data normalization and structured formatting for easier analysis and processing</li>
+                  <li>Scheduled and on-demand parsing to accommodate real-time or batch processing</li>
+                  <li>API-ready outputs for integration with other tools, dashboards, or automation workflows</li>
+                  <li>Logging of errors and intelligent retries to ensure data completeness in case of failures</li>
+               </ul>
+               <p class="tech-stack"><strong>Tech Stack</strong> <span class="tech-tag">n8n</span> <span class="tech-tag">Google Docs</span> <span class="tech-tag">Telegram</span></p>
+            </div>
+         </section>
+         <section id="contact">
+            <h2>Contact</h2>
+            <ul>
+               <li><a href="https://t.me/serhiismetanskyi" rel="me" target="_blank"><i class="fa-brands fa-telegram"></i> Telegram</a></li>
+               <li><a href="https://www.linkedin.com/in/serhiismetanskyi" rel="me" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+               <li><a href="https://github.com/serhiismetanskyi" rel="me" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></li>
+               <li><i class="fa-solid fa-envelope"></i> mail[at]serhiismetanskyi.cv</li>
+            </ul>
+         </section>
+      </main>
+      <footer>
+         <p>© <span id="year"></span> Serhii Smetanskyi</p>
+      </footer>
+      <script>
+         document.addEventListener("DOMContentLoaded", function() {
+            // Get all tabs and sections
+            const tabs = document.querySelectorAll("#cases nav a.case-tab");
+            const sections = document.querySelectorAll(".case-section");
+            
+            // Function to switch tabs
+            function switchTab(tabId) {
+               // Hide all sections
+               sections.forEach(section => {
+                  section.classList.remove("active");
+               });
+               
+               // Show active section
+               const activeSection = document.querySelector(`.case-section[data-section="${tabId}"]`);
+               if (activeSection) {
+                  activeSection.classList.add("active");
+               }
+               
+               // Update active tab
+               tabs.forEach(tab => {
+                  tab.classList.remove("active");
+                  if (tab.getAttribute("data-tab") === tabId) {
+                     tab.classList.add("active");
+                  }
+               });
+            }
+            
+            // Add event handlers for tabs
+            tabs.forEach(tab => {
+               tab.addEventListener("click", function(e) {
+                  e.preventDefault();
+                  const tabId = this.getAttribute("data-tab");
+                  switchTab(tabId);
+                  
+                  // Update URL without page reload
+                  window.history.pushState(null, null, `#${tabId}`);
+               });
+            });
+            
+            // Show first tab on load
+            const hash = window.location.hash.substring(1);
+            if (hash && ["reminders", "management", "testing", "finance", "content", "tools", "parsers"].includes(hash)) {
+               switchTab(hash);
+            } else {
+               switchTab("reminders");
+            }
+            
+            // Handle hash change in URL
+            window.addEventListener("hashchange", function() {
+               const hash = window.location.hash.substring(1);
+               if (hash && ["reminders", "management", "testing", "finance", "content", "tools", "parsers"].includes(hash)) {
+                  switchTab(hash);
+               }
+            });
+         });
+      </script>
+      <script>
+         document.getElementById("year").textContent = new Date().getFullYear();
+      </script>
+   </body>
+</html>
