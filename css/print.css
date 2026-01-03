@@ -1,0 +1,140 @@
+/* Print-only styling for CV */
+@page {
+  size: A4;
+  margin: 15mm 14mm;
+}
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  -webkit-print-color-adjust: exact;
+  print-color-adjust: exact;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #111;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  font-size: 11pt;
+  line-height: 1.4;
+}
+
+/* Hide navigation, menus, and footer for a clean resume layout */
+.main-nav,
+body > nav,
+footer,
+#projects nav {
+  display: none !important;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 10mm;
+  text-align: left;
+  margin-bottom: 8mm;
+}
+
+header img {
+  width: 32mm;
+  height: 32mm;
+  margin: 0;
+  border-radius: 50%;
+}
+
+.header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5mm;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 20pt;
+  line-height: 1.2;
+}
+
+header p {
+  margin: 2mm 0 0;
+  font-size: 11pt;
+}
+
+main {
+  max-width: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  margin: 0;
+  padding: 0;
+  page-break-inside: auto;
+}
+
+section + section {
+  margin-top: 6mm;
+}
+
+section > h2 {
+  margin: 0 0 3mm;
+  font-size: 15pt;
+  font-weight: 700;
+  border-bottom: 1px solid #cfd2d6;
+  padding-bottom: 2mm;
+}
+
+section h3 {
+  margin: 3mm 0 2mm;
+  font-size: 13pt;
+  font-weight: 600;
+  page-break-after: avoid;
+}
+
+section h4 {
+  margin: 2mm 0 2mm;
+  font-size: 11pt;
+  font-weight: 600;
+  page-break-after: avoid;
+}
+
+p {
+  margin: 1.5mm 0 0;
+}
+
+ul {
+  margin: 1.5mm 0 0;
+  padding-left: 4mm;
+  list-style-type: disc;
+}
+
+ul li {
+  padding: 0.5mm 0;
+}
+
+.tech-stack {
+  margin: 2mm 0 0;
+}
+
+.tech-tag {
+  display: inline-block;
+  padding: 1mm 3mm;
+  margin: 1mm 1mm 0 0;
+  border: 1px solid #cfd2d6;
+  border-radius: 3px;
+  background: #fff;
+  color: #111;
+  font-size: 9pt;
+}
+
+#contact ul {
+  gap: 4mm;
+}
+
+#contact ul li {
+  padding: 0;
+}
+
