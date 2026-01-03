@@ -167,50 +167,42 @@
             <h3 id="tests">Tests</h3>
             <h4><a href="https://github.com/serhiismetanskyi/database-tests-with-sqlalchemy" target="_blank">Database Tests with SQLAlchemy</a></h4>
             <p>
-               Automated database testing framework for validating data integrity, schema constraints, and transactional behavior. 
-               Includes migrations management, test data factories, and comprehensive logging with HTML reporting.
+               Database testing framework for validating data integrity, schema constraints, and transactional behavior. Uses SQLAlchemy ORM with Alembic migrations and Pytest as test runner. Generates realistic test data through factories and produces execution logs with HTML reports. Runs in Dockerized PostgreSQL environment with automated migrations and comprehensive CRUD validation.
             </p>
             <p class="tech-stack"><strong>Tech Stack</strong> <span class="tech-tag">Python</span> <span class="tech-tag">Pytest</span> <span class="tech-tag">PostgreSQL</span> <span class="tech-tag">Alembic</span> <span class="tech-tag">SQLAlchemy</span> <span class="tech-tag">Pydantic</span></p>
             <h4><a href="https://github.com/serhiismetanskyi/petstore-load-tests" target="_blank">PetStore Load Tests</a></h4>
             <p>
-               Performance and load testing suite for the PetStore REST API. Simulates concurrent users to identify performance bottlenecks, 
-               measure response times, and validate system behavior under various load conditions.
+               Load testing framework for REST API performance analysis. Uses Locust to simulate concurrent user traffic with configurable spawn rates and test duration. Implements sequential and parallel task execution patterns for realistic user behavior scenarios. Generates dynamic test data with Faker, logs detailed HTTP request/response transactions, and produces HTML reports with response time metrics and failure tracking. Runs in Docker with adjustable concurrency parameters.
             </p>
             <p class="tech-stack"><strong>Tech Stack</strong> <span class="tech-tag">Python</span> <span class="tech-tag">Pytest</span> <span class="tech-tag">Locust</span> <span class="tech-tag">Requests</span></p>
             <h4><a href="https://github.com/serhiismetanskyi/testme-load-tests" target="_blank">TestMe Load Tests</a></h4>
             <p>
-               Load testing framework for the TestMe web application. Evaluates system scalability, throughput, and stability under high 
-               concurrent user loads to ensure optimal performance at scale.
+               Load testing framework for evaluating API performance under concurrent user load. Uses Locust to simulate authenticated user sessions with configurable concurrency parameters. Implements sequential task execution for CRUD operations. Logs detailed HTTP transactions with request/response data and produces HTML reports with response time percentiles and failure tracking. Runs in Docker with adjustable spawn rates and test duration.
             </p>
             <p class="tech-stack"><strong>Tech Stack</strong> <span class="tech-tag">Python</span> <span class="tech-tag">Pytest</span> <span class="tech-tag">Locust</span> <span class="tech-tag">Requests</span></p>
             <h4><a href="https://github.com/serhiismetanskyi/testme-api-tests" target="_blank">TestMe API Tests</a></h4>
             <p>
-               Comprehensive API test suite for the TestMe application. Covers functional validation, CRUD operations, authentication flows, 
-               and error handling scenarios with detailed test reporting.
+               API test automation framework for REST endpoint validation. Built with Pytest and Playwright's APIRequestContext for HTTP communication. Uses Pydantic models for request/response validation and type safety. Generates realistic test data with Faker, supports parallel execution via pytest-xdist, and produces detailed HTML reports with embedded HTTP transaction logs. Runs in Docker with environment-based configuration.
             </p>
             <p class="tech-stack"><strong>Tech Stack</strong> <span class="tech-tag">Python</span> <span class="tech-tag">Pytest</span> <span class="tech-tag">Requests</span> <span class="tech-tag">Pydantic</span></p>
             <h4><a href="https://github.com/serhiismetanskyi/serverest-api-tests" target="_blank">ServeRest API Tests</a></h4>
             <p>
-               Automated API testing framework for the ServeRest API. Validates CRUD operations, authentication mechanisms, data validation, 
-               and error handling with structured test organization and reporting.
+               API test automation framework for e-commerce REST endpoints validation. Built with Pytest and Requests library for HTTP communication. Uses fixture-based test infrastructure for dynamic test data generation with Faker and automatic cleanup. Provides dual logging system with detailed HTTP transaction logs and HTML reports with embedded request/response data. Runs in Docker with environment-based configuration.
             </p>
             <p class="tech-stack"><strong>Tech Stack</strong> <span class="tech-tag">Python</span> <span class="tech-tag">Pytest</span> <span class="tech-tag">Requests</span></p>
             <h4><a href="https://github.com/serhiismetanskyi/saucedemo-ui-tests-with-selenium" target="_blank">SauceDemo UI Tests with Selenium</a></h4>
             <p>
-               End-to-end UI automation test suite for the SauceDemo e-commerce platform. Implements critical user journeys including 
-               authentication, product browsing, cart management, and checkout workflows.
+               UI test automation framework for e-commerce web application. Built with Pytest and Selenium WebDriver using Page Object Model pattern for test organization. Manages ChromeDriver automatically via webdriver-manager and supports both headless and UI execution modes. Generates dynamic test data with Faker through pytest fixtures. Provides detailed execution logs and HTML reports with test results. Runs in containerized environment with Chrome browser and environment-based configuration.
             </p>
             <p class="tech-stack"><strong>Tech Stack</strong> <span class="tech-tag">Python</span> <span class="tech-tag">Pytest</span> <span class="tech-tag">Selenium</span></p>
             <h4><a href="https://github.com/serhiismetanskyi/saucedemo-ui-tests-with-playwright" target="_blank">SauceDemo UI Tests with Playwright</a></h4>
             <p>
-               Modern UI automation framework for SauceDemo using Playwright. Provides fast, reliable cross-browser testing with built-in 
-               waiting mechanisms, network interception, and screenshot capabilities for comprehensive test coverage.
+               UI test automation framework for e-commerce web application. Built with Pytest and Playwright using Page Object Model pattern for test organization. Supports both headless and UI execution modes with built-in auto-waiting and modern async capabilities. Generates dynamic test data with Faker through pytest fixtures. Provides detailed execution logs and HTML reports with test results. Runs in containerized environment with Chromium browser and environment-based configuration.
             </p>
             <p class="tech-stack"><strong>Tech Stack</strong> <span class="tech-tag">Python</span> <span class="tech-tag">Pytest</span> <span class="tech-tag">Playwright</span></p>
             <h4><a href="https://github.com/serhiismetanskyi/restfulbooker-api-tests" target="_blank">RestfulBooker API Tests</a></h4>
             <p>
-               End-to-end API test suite for the RestfulBooker hotel booking service. Validates booking lifecycle, authentication, 
-               data integrity, and error scenarios with comprehensive test coverage and detailed reporting.
+               API test automation framework for booking management system validation. Built with Pytest and Requests library for HTTP communication. Uses pytest-dependency markers to enforce sequential test execution for complete resource lifecycle testing. Generates dynamic test data with Faker and provides response validation utilities for status codes and JSON structure verification. Logs detailed HTTP transactions and produces HTML reports with formatted request/response bodies. Runs in Docker containers with environment-based configuration.
             </p>
             <p class="tech-stack"><strong>Tech Stack</strong> <span class="tech-tag">Python</span> <span class="tech-tag">Pytest</span> <span class="tech-tag">Requests</span></p>
          </section>
