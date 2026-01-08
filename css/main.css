@@ -54,17 +54,87 @@ nav a:hover i,a:not(.youtube-btn):not(.tech-tag):hover i {opacity:0.8;}
 #cases nav a.active {font-weight:bold;}
 
 /* Headings */
-header h1 {font-size:2em;font-weight:700;margin:0.5rem 0;line-height:1.2;}
-section > h2 {font-size:1.6em;font-weight:600;margin-top:3rem;margin-bottom:1.5rem;color:var(--text);}
-section > h2:first-child {margin-top:0;}
-.case-section > h3,#cases h3 {font-size:1.2em;font-weight:600;margin-top:2.5rem;margin-bottom:1.25rem;color:var(--text);}
-.case-section > h3:first-child {margin-top:0;}
-#cases h4 {font-size:1.2em;font-weight:600;margin-top:2rem;margin-bottom:1rem;color:var(--text);line-height:1.3;}
-#cases h4 + p > strong {display:block;margin-top:1.5rem;margin-bottom:0.75rem;font-size:1em;font-weight:600;color:var(--text);}
-#experience h3,#education h3 {font-size:1.4em;font-weight:600;margin-top:2rem;margin-bottom:0.75rem;color:var(--text);}
-#projects h4 {font-size:1.2em;font-weight:600;margin-top:1.5rem;margin-bottom:0.75rem;color:var(--text);}
-section > h3 {font-size:1.5em;font-weight:600;margin-top:2.5rem;margin-bottom:1rem;color:var(--text);}
-section > h4 {font-size:1.25em;font-weight:600;margin-top:2rem;margin-bottom:0.75rem;color:var(--text);}
+header h1 {
+  font-size: 2em;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+/* Sections spacing */
+section {
+  margin-bottom: 2.5rem;
+}
+
+section:last-child {
+  margin-bottom: 0;
+}
+
+/* Main section headings (h2) */
+section > h2 {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+  color: var(--text);
+  line-height: 1.3;
+  letter-spacing: -0.01em;
+}
+
+/* Subsection headings (h3) */
+section > h3,
+#experience h3,
+#education h3 {
+  font-size: 1.4em;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+section > h3:first-child,
+#experience h3:first-child,
+#education h3:first-child {
+  margin-top: 1.5rem;
+}
+
+/* Sub-subsection headings (h4) */
+section > h4,
+#projects h4,
+#cases h4 {
+  font-size: 1.2em;
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+/* Case section specific headings */
+.case-section > h3,
+#cases h3 {
+  font-size: 1.3em;
+  font-weight: 600;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: var(--text);
+  line-height: 1.4;
+}
+
+.case-section > h3:first-child {
+  margin-top: 0;
+}
+
+#cases h4 + p > strong {
+  display: block;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+  font-size: 1em;
+  font-weight: 600;
+  color: var(--text);
+}
 
 /* Lists */
 main ul:not(nav ul):not(#contact ul) {list-style:none;padding-left:1.5rem;}
