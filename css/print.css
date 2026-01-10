@@ -3,16 +3,13 @@
   size: A4;
   margin: 15mm 14mm;
 }
-
 :root {
   color-scheme: light;
 }
-
 * {
   -webkit-print-color-adjust: exact;
   print-color-adjust: exact;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -22,15 +19,10 @@ body {
   font-size: 11pt;
   line-height: 1.4;
 }
-
 /* Hide navigation, menus, and footer for a clean resume layout */
-.main-nav,
-body > nav,
-footer,
-#projects nav {
+.main-nav, body > nav, footer, #projects nav {
   display: none !important;
 }
-
 header {
   display: flex;
   align-items: flex-start;
@@ -39,14 +31,12 @@ header {
   margin-bottom: 12mm;
   position: relative;
 }
-
 header img {
   width: 32mm;
   height: 32mm;
   margin: 0;
   border-radius: 50%;
 }
-
 .header-info {
   display: flex;
   flex-direction: column;
@@ -54,23 +44,19 @@ header img {
   flex: 1;
   position: relative;
 }
-
 header h1 {
   margin: 0;
   font-size: 20pt;
   line-height: 1.2;
 }
-
 header p {
   margin: 2mm 0 6mm;
   font-size: 11pt;
 }
-
 /* Hide contact section title */
 #contact h2 {
   display: none !important;
 }
-
 /* Hide contact section from main flow but keep content accessible */
 #contact {
   position: absolute;
@@ -81,7 +67,6 @@ header p {
   overflow: visible;
   visibility: hidden;
 }
-
 /* Move contact list to header-info after subtitle */
 #contact ul {
   display: flex;
@@ -94,49 +79,42 @@ header p {
   position: absolute;
   visibility: visible;
   white-space: nowrap;
-  /* Position relative to header: header top + h1 height (20pt * 1.2) + gap (1.5mm) + p margin-top (2mm) + p content (11pt) + p margin-bottom (6mm) */
+ /* Position relative to header: header top + h1 height (20pt * 1.2) + gap (1.5mm) + p margin-top (2mm) + p content (11pt) + p margin-bottom (6mm) */
   top: calc(20pt * 1.2 + 1.5mm + 2mm + 11pt + 6mm);
-  /* Position relative to header: image width (32mm) + gap (10mm) */
+ /* Position relative to header: image width (32mm) + gap (10mm) */
   left: calc(32mm + 10mm);
   width: auto;
-  max-width: calc(100vw - 32mm - 10mm - 28mm); /* Account for page margins */
+  max-width: calc(100vw - 32mm - 10mm - 28mm);
+ /* Account for page margins */
   align-items: center;
 }
-
 #contact ul li {
   padding: 0;
   margin: 0;
   white-space: nowrap;
   flex-shrink: 0;
 }
-
-#contact ul li a,
-#contact ul li {
+#contact ul li a, #contact ul li {
   display: inline-flex;
   align-items: center;
   gap: 0.5mm;
 }
-
 #contact ul li i {
   flex-shrink: 0;
 }
-
 main {
   max-width: none;
   margin: 0;
   padding: 0;
 }
-
 section {
   margin: 0 0 5mm 0;
   padding: 0;
   page-break-inside: auto;
 }
-
 section:last-child {
   margin-bottom: 0;
 }
-
 /* Main section headings (h2) */
 section > h2 {
   margin: 0 0 3mm 0;
@@ -146,53 +124,39 @@ section > h2 {
   line-height: 1.3;
   letter-spacing: -0.01em;
 }
-
 /* Subsection headings (h3) */
-section h3,
-#experience h3,
-#education h3 {
+section h3, #experience h3, #education h3 {
   margin: 4mm 0 2mm;
   font-size: 13pt;
   font-weight: 600;
   page-break-after: avoid;
   line-height: 1.4;
 }
-
-section h3:first-child,
-#experience h3:first-child,
-#education h3:first-child {
+section h3:first-child, #experience h3:first-child, #education h3:first-child {
   margin-top: 3mm;
 }
-
 /* Sub-subsection headings (h4) */
-section h4,
-#projects h4 {
+section h4, #projects h4 {
   margin: 3mm 0 2mm;
   font-size: 11pt;
   font-weight: 600;
   page-break-after: avoid;
   line-height: 1.4;
 }
-
-
 p {
   margin: 1.5mm 0 0;
 }
-
 ul {
   margin: 1.5mm 0 0;
   padding-left: 4mm;
   list-style-type: disc;
 }
-
 ul li {
   padding: 0.5mm 0;
 }
-
 .tech-stack {
   margin: 2mm 0 0;
 }
-
 .tech-tag {
   display: inline-block;
   padding: 1mm 3mm;
@@ -203,8 +167,6 @@ ul li {
   color: #111;
   font-size: 9pt;
 }
-
 #contact ul li {
   padding: 0;
 }
-
