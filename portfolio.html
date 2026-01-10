@@ -14,26 +14,8 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
       <!-- Main CSS -->
       <link rel="stylesheet" href="css/main.css">
-      <style>
-         .case-image {
-         max-width: 100%;
-         height: auto;
-         margin: 1rem 0;
-         border-radius: 4px;
-         }
-         .case-section {
-         display: none;
-         }
-         .case-section.active {
-         display: block;
-         }
-         #cases nav a {
-         cursor: pointer;
-         }
-         #cases nav a.active {
-         font-weight: bold;
-         }
-      </style>
+      <!-- Mermaid.js -->
+      <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
       <!-- Open Graph -->
       <meta property="og:title" content="Serhii Smetanskyi – Automation Engineer" />
       <meta property="og:description" content="Portfolio of Serhii Smetanskyi: Automation Engineer specializing in AI agents and automated workflows." />
@@ -154,6 +136,63 @@
                <p>
                   Smart Doc Notifier Agent is a tool that helps lawyers and finance specialists keep track of changes in monitored documents, making sure they always know about updates and critical information.
                </p>
+               <div class="flow-diagram-toggle">
+                  <span><i class="fa-solid fa-diagram-project"></i> Workflow Diagram</span>
+                  <span class="toggle-icon"><i class="fa-solid fa-chevron-right"></i></span>
+               </div>
+               <div class="flow-diagram-content">
+                  <div class="mermaid-container">
+                     <div class="mermaid-zoom-controls">
+                        <button class="mermaid-zoom-btn" onclick="zoomMermaid(this, 1.2)" title="Zoom In">
+                           <i class="fa-solid fa-plus"></i>
+                        </button>
+                        <button class="mermaid-zoom-btn" onclick="zoomMermaid(this, 0.8)" title="Zoom Out">
+                           <i class="fa-solid fa-minus"></i>
+                        </button>
+                        <button class="mermaid-zoom-btn" onclick="resetMermaidZoom(this)" title="Reset Zoom">
+                           <i class="fa-solid fa-rotate-right"></i>
+                        </button>
+                        <div class="mermaid-zoom-info" id="zoom-info-0">100%</div>
+                     </div>
+                     <div class="mermaid-scroll-container">
+                        <div class="mermaid-wrapper">
+                           <div class="mermaid" data-zoom="1" data-translate-x="0" data-translate-y="0" data-index="smart-doc-notifier" style="transform: translate(0, 0) scale(1); transform-origin: top left;">
+graph TD
+    A[Start: Receive Processing Data] --> B[Retrieve Documents<br/>from Database]
+    B --> C[Prepare Document Data<br/>& Current Date]
+    C --> D[Check Notification Status]
+    D --> E{Already<br/>Notified?}
+    E -->|Yes| Z[End]
+    E -->|No| F[Validate Document Dates]
+    F --> G{Document Date<br/>Valid?}
+    G -->|No| Z
+    G -->|Yes| H[Sort Documents by Date]
+    H --> I[Calculate Date Range<br/>for Document Search]
+    I --> J[Find Documents by Type<br/>Vehicles, Bank Accounts,<br/>Funds Arrest, PFU, Tax Service]
+    J --> K{Any Documents<br/>Found?}
+    K -->|No| Z
+    K -->|Yes| L[Process Each Document Type]
+    L --> M[Download Document Files]
+    M --> N[Extract Text from PDF]
+    N --> O[AI Analysis:<br/>Extract Document Information]
+    O --> P{Analysis<br/>Successful?}
+    P -->|No| Q[Log Error & Update Status]
+    P -->|Yes| R{Information<br/>Extracted?}
+    R -->|No| S[Skip Notification]
+    R -->|Yes| T[Prepare Notification Data]
+    T --> U[Send Email Notification]
+    U --> V{Notification<br/>Sent?}
+    V -->|Yes| W[Update Status:<br/>Notification Sent]
+    V -->|No| X[Update Status:<br/>Notification Error]
+    Q --> Z
+    S --> Z
+    W --> Z
+    X --> Z
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
                <p><strong>Features</strong></p>
                <ul>
                   <li>Automatic monitoring of legal documents from state registries</li>
@@ -181,6 +220,47 @@
                <p>
                   The agent automatically creates SEO content briefs (Technical Specifications) in Google Docs with all essential SEO attributes and details — keywords, competitor analysis, LSI suggestions, metadata, and structured content checklists — to fully automate the process of assigning tasks to copywriters while accounting for all SEO requirements and project-specific guidelines.
                </p>
+               <div class="flow-diagram-toggle">
+                  <span><i class="fa-solid fa-diagram-project"></i> Workflow Diagram</span>
+                  <span class="toggle-icon"><i class="fa-solid fa-chevron-right"></i></span>
+               </div>
+               <div class="flow-diagram-content">
+                  <div class="mermaid">
+graph TD
+    A[Start: Receive Task Action<br/>via Telegram Callback] --> B[Get Task Data<br/>from Google Sheets]
+    B --> C[Check Task Action]
+    C -->|Action: Execute| D[Check Task Status]
+    C -->|Action: Cancel| E[Update Status:<br/>Cancelled]
+    E --> F[Notify Executor & Manager]
+    F --> Z[End]
+    D -->|Status: Awaiting Data| G[LLM: Generate<br/>Task Content]
+    D -->|Status: Under Executor Review| H[LLM: Final<br/>Content Checking]
+    D -->|Status: Has Remarks| I[Force Action:<br/>Done or Reject]
+    G --> J[LLM: Check Content Quality]
+    J --> K{Rating >= 7?}
+    K -->|Yes| L[Update Status:<br/>Under Executor Review]
+    K -->|No| M[Update Status:<br/>Has Remarks]
+    M --> N[LLM: Regenerate Content]
+    N --> O[LLM: Re-check Quality]
+    O --> P{Rating >= 7?}
+    P -->|Yes| L
+    P -->|No| Q[Update Status:<br/>Has Remarks 2]
+    Q --> R[Notify Executor & Manager]
+    L --> S[Get Executor Info]
+    S --> T[Send Notification<br/>to Executor]
+    H --> U{Rating >= 7?}
+    U -->|Yes| V[Update Status: Done]
+    U -->|No| W[Update Status:<br/>Has Remarks 2]
+    V --> X[Notify Executor & Manager]
+    W --> Y[Notify Executor & Manager<br/>with Action Buttons]
+    I --> AA{Manager Decision}
+    AA -->|Approve| V
+    AA -->|Reject| E
+    X --> Z
+    Y --> Z
+    R --> Z
+                  </div>
+               </div>
                <p><strong>Features</strong></p>
                <ul>
                   <li>Single point of task management directly in the messenger</li>
@@ -211,6 +291,41 @@
                <p>
                   Postman Tests Generator Agent is an AI-powered tool that automatically transforms your OpenAPI/Swagger specifications into structured Postman collections with comprehensive tests, validations, and smart organization. It streamlines API testing and saves valuable time for developers and QA teams.
                </p>
+               <div class="flow-diagram-toggle">
+                  <span><i class="fa-solid fa-diagram-project"></i> Workflow Diagram</span>
+                  <span class="toggle-icon"><i class="fa-solid fa-chevron-right"></i></span>
+               </div>
+               <div class="flow-diagram-content">
+                  <div class="mermaid">
+graph TD
+    A[Start: Receive Request<br/>from Telegram] --> B{File Attached?}
+    B -->|No| C[Prepare Request Data]
+    B -->|Yes| D[Check File Type:<br/>Must be JSON]
+    D -->|Invalid| E[Send Error:<br/>Invalid File Format]
+    D -->|Valid| F[Get File from Telegram]
+    F --> G[Extract File Data]
+    G --> C
+    C --> H[AI: Generate Postman Collection<br/>with Comprehensive Tests]
+    H --> I[Clean Markdown Formatting]
+    I --> J[Create Collection File]
+    J --> K[Send Collection File<br/>to User via Telegram]
+    K --> L{Postman API Key<br/>Provided?}
+    L -->|Yes| M[Create Collection<br/>in Postman Cloud]
+    L -->|No| N[AI: Generate Postman Environments:<br/>Development, Sandbox, Production]
+    M --> N
+    N --> O[Split Environments<br/>into Individual Files]
+    O --> P[Loop: Process Each Environment]
+    P --> Q[Create Environment File]
+    Q --> R[Send Environment File<br/>to User via Telegram]
+    R --> S{Postman API Key<br/>Provided?}
+    S -->|Yes| T[Create Environment<br/>in Postman Cloud]
+    S -->|No| U{More Environments?}
+    T --> U
+    U -->|Yes| P
+    U -->|No| V[End]
+    E --> V
+                  </div>
+               </div>
                <p><strong>Features</strong></p>
                <ul>
                   <li>Upload API spec file or describe your API in plain English via Telegram bot</li>
@@ -237,6 +352,38 @@
                <p>
                   Cost Tracker Agent is an AI-powered system that manages your expenses automatically. It records expenses from natural language, sorts them by category and vendor, gathers the data, and provides clear financial insights, giving you full control of your finances in real time.
                </p>
+               <div class="flow-diagram-toggle">
+                  <span><i class="fa-solid fa-diagram-project"></i> Workflow Diagram</span>
+                  <span class="toggle-icon"><i class="fa-solid fa-chevron-right"></i></span>
+               </div>
+               <div class="flow-diagram-content">
+                  <div class="mermaid">
+graph TD
+    A[Start: Receive Message<br/>from Telegram] --> B[Format Request Data:<br/>Message, Timestamp, Chat ID]
+    B --> C[AI: Classify Request Type]
+    C --> D{Request Type?}
+    D -->|New Expense| E[AI: Extract Expense Data:<br/>Category, Amount, Currency, Vendor]
+    D -->|Get Expenses| F[AI: Parse Query Intent:<br/>Date Range, Categories, Vendors]
+    E --> G[AI: Validate/Create Category<br/>via Category Creator Agent]
+    G --> H{Vendor Specified<br/>in Request?}
+    H -->|Yes| I[AI: Validate/Create Vendor<br/>via Vendor Creator Agent]
+    H -->|No| J[Set Vendor ID to Null]
+    I --> K[Store Expense<br/>in Database]
+    J --> K
+    K --> L[Send Confirmation<br/>to User via Telegram]
+    F --> M[Get Database Schema]
+    M --> N[Map User Terms to<br/>Database Categories & Vendors]
+    N --> O[Generate SQL Query<br/>with Chat ID Filter]
+    O --> P[Execute Query<br/>on Database]
+    P --> Q[Retrieve Expense Data]
+    Q --> R[AI: Analyze Expenses:<br/>Statistics, Trends, Patterns]
+    R --> S[Get Category & Vendor Names<br/>for Readable Analysis]
+    S --> T[Generate Comprehensive<br/>Analysis Report]
+    T --> U[Send Analysis Report<br/>to User via Telegram]
+    L --> V[End]
+    U --> V
+                  </div>
+               </div>
                <p><strong>Features</strong></p>
                <ul>
                   <li>Integration with messengers</li>
@@ -262,6 +409,43 @@
                <p>
                   Content Creator Agent is an AI-driven, fully autonomous end-to-end system for SEO content generation, handling everything from creating trending content to automatic website posting.
                </p>
+               <div class="flow-diagram-toggle">
+                  <span><i class="fa-solid fa-diagram-project"></i> Workflow Diagram</span>
+                  <span class="toggle-icon"><i class="fa-solid fa-chevron-right"></i></span>
+               </div>
+               <div class="flow-diagram-content">
+                  <div class="mermaid">
+graph TD
+    A[Start: Receive Content Request] --> B[Extract Request Information:<br/>Text, Website Link, Doc Link, WordPress Flag]
+    B --> C{Document Link<br/>Provided?}
+    C -->|Yes| D[Retrieve Content<br/>from Google Docs]
+    C -->|No| E{Website Link<br/>Provided?}
+    D --> F{WordPress<br/>Publishing Requested?}
+    E -->|Yes| G[Fetch Website Content]
+    E -->|No| H[End]
+    G --> I[Analyze Website:<br/>Business Niche, Domain, Profile]
+    I --> J[Research Current Trends<br/>via Perplexity AI]
+    J --> K[Generate SEO Content Plan:<br/>Topics, Keywords, Formats]
+    K --> L[Split Content Plan<br/>into Individual Topics]
+    L --> M[Loop: Process Each Topic]
+    M --> N[AI: Write SEO-Optimized<br/>Article]
+    N --> O[AI: Analyze & Optimize<br/>Article for SEO]
+    O --> P[Save Article to<br/>Google Docs]
+    P --> Q{WordPress<br/>Publishing Requested?}
+    Q -->|Yes| R[Publish Article<br/>to WordPress]
+    Q -->|No| S[Send Notification:<br/>Document Created]
+    R --> T[Send Notification:<br/>Post Published]
+    F -->|Yes| U[Validate & Structure<br/>Article Content]
+    F -->|No| H
+    U --> V[Create WordPress Post<br/>from Document]
+    V --> W[Send Notification:<br/>Post Created]
+    S --> X{More Topics?}
+    T --> X
+    W --> H
+    X -->|Yes| M
+    X -->|No| H
+                  </div>
+               </div>
                <p><strong>Features</strong></p>
                <ul>
                   <li>Integration with messengers</li>
@@ -288,6 +472,29 @@
                <p>
                   Progress Reporter Agent is a fully autonomous AI agent that collects, analyzes, and delivers structured project updates — saving time and keeping teams and stakeholders aligned.
                </p>
+               <div class="flow-diagram-toggle">
+                  <span><i class="fa-solid fa-diagram-project"></i> Workflow Diagram</span>
+                  <span class="toggle-icon"><i class="fa-solid fa-chevron-right"></i></span>
+               </div>
+               <div class="flow-diagram-content">
+                  <div class="mermaid">
+graph TD
+    A[Start: Receive Report Request] --> B[Extract & Validate<br/>Request Information]
+    B --> C[Extract Date Range<br/>from Request]
+    C --> D[Generate JQL Queries:<br/>In Progress/Review & Done]
+    D --> E[Query Jira API:<br/>Fetch Tasks by Status]
+    E --> F[Save Tasks & Date Range<br/>to Database]
+    F --> G[Enrich Tasks:<br/>Get Epic Names from Jira]
+    G --> H[Update Epic Names<br/>in Database]
+    H --> I[Calculate Metrics:<br/>Tasks, Epics, Statuses, Projects]
+    I --> J[AI: Generate Analytical<br/>Report from Tasks Data]
+    J --> K[Save Report<br/>to Database]
+    K --> L[Combine Metrics:<br/>Prepare Dashboard Data]
+    L --> M[Update Dashboard<br/>with Metrics]
+    M --> N[Send Report & Dashboard<br/>Links via Messenger]
+    N --> O[End]
+                  </div>
+               </div>
                <p><strong>Features</strong></p>
                <ul>
                   <li>Integration with messengers</li>
@@ -305,6 +512,31 @@
                <p>
                   Bug Creator Agent is an autonomous AI agent that automates the creation of bug reports in Jira.
                </p>
+               <div class="flow-diagram-toggle">
+                  <span><i class="fa-solid fa-diagram-project"></i> Workflow Diagram</span>
+                  <span class="toggle-icon"><i class="fa-solid fa-chevron-right"></i></span>
+               </div>
+               <div class="flow-diagram-content">
+                  <div class="mermaid">
+graph TD
+    A[Start: Receive Bug Report Request] --> B[Extract Request Information:<br/>Text, Document Link, Jira Flag]
+    B --> C{Document Link<br/>Provided?}
+    C -->|Yes| D[Retrieve Content<br/>from Google Docs]
+    C -->|No| E[Use Request Text]
+    D --> E
+    E --> F{Create Jira Ticket<br/>Requested?}
+    F -->|Yes| G[Validate & Structure<br/>Bug Report Data]
+    F -->|No| H[AI: Generate Bug Report<br/>from Request Details]
+    G --> I[Create Bug Report<br/>in Jira]
+    H --> J[Extract & Structure<br/>Bug Report Fields]
+    I --> K[Send Notification:<br/>Jira Ticket Created]
+    J --> L[Copy Template Document]
+    L --> M[Add Bug Report Content<br/>to Google Docs]
+    M --> N[Send Notification:<br/>Document Created]
+    K --> O[End]
+    N --> O
+                  </div>
+               </div>
                <p><strong>Features</strong></p>
                <ul>
                   <li>Integration with messengers</li>
@@ -326,6 +558,46 @@
                <p>
                   Government Data Parser is a tool that automates data retrieval from government registries, streamlining access to official information and documents. It provides a fully automated pipeline for monitoring, collecting, and managing registry data, ensuring accuracy, compliance, and efficiency.
                </p>
+               <div class="flow-diagram-toggle">
+                  <span><i class="fa-solid fa-diagram-project"></i> Workflow Diagram</span>
+                  <span class="toggle-icon"><i class="fa-solid fa-chevron-right"></i></span>
+               </div>
+               <div class="flow-diagram-content">
+                  <div class="mermaid">
+graph TD
+    A[Start: Receive Processing Request] --> B[Retrieve Data<br/>from Government API]
+    B --> C{Data Retrieved<br/>Successfully?}
+    C -->|No| D[Retry with Backoff]
+    D --> B
+    C -->|Yes| E[Parse Document List]
+    E --> F[Check/Create Google Drive<br/>Folder for VP]
+    F --> G[Split Documents by Type]
+    G --> H[Process Decision Documents]
+    G --> I[Process Attachment Documents]
+    H --> J{Document Already<br/>Exists in Database?}
+    I --> K{Document Already<br/>Exists in Database?}
+    J -->|Yes| L[Skip Document]
+    J -->|No| M[Fetch Document from API]
+    K -->|Yes| L
+    K -->|No| N[Fetch Document from API]
+    M --> O{Document Retrieved<br/>Successfully?}
+    N --> P{Document Retrieved<br/>Successfully?}
+    O -->|No| Q[Log Error & Retry]
+    P -->|No| Q
+    Q --> M
+    Q --> N
+    O -->|Yes| R[Convert to File Format]
+    P -->|Yes| S[Convert to File Format]
+    R --> T[Upload to Google Drive]
+    S --> T
+    T --> U[Record Metadata in<br/>Google Sheets]
+    L --> V{More Documents?}
+    U --> V
+    V -->|Yes| G
+    V -->|No| W[Update Status]
+    W --> X[End]
+                  </div>
+               </div>
                <p><strong>Features</strong></p>
                <ul>
                   <li>Integration with messengers</li>
@@ -343,100 +615,8 @@
          </section>
       </main>
       <footer>
-         <p>© <span id="year"></span> Serhii Smetanskyi</p>
+         <p><span>© <span id="year"></span> Serhii Smetanskyi</span></p>
       </footer>
-      <script>
-         document.addEventListener("DOMContentLoaded", function() {
-            // Get all tabs and sections
-            const tabs = document.querySelectorAll("#cases nav a.case-tab");
-            const sections = document.querySelectorAll(".case-section");
-         
-            // Map inner anchors to their parent tab IDs
-            const anchorToTabMap = {
-               "smart-doc-notifier-agent": "reminders",
-               "seo-task-creator-agent": "management",
-               "postman-tests-generator-agent": "testing",
-               "cost-tracker-agent": "finance",
-               "content-creator-agent": "content",
-               "progress-reporter-agent": "tools",
-               "bug-creator-agent": "tools",
-               "government-data-parser": "parsers"
-            };
-         
-            // Function to switch tabs
-            function switchTab(tabId) {
-               console.debug("[portfolio] switchTab called with:", tabId);
-         
-               // Hide all sections
-               sections.forEach(section => {
-                  section.classList.remove("active");
-               });
-         
-               // Show active section
-               const activeSection = document.querySelector(`.case-section[data-section="${tabId}"]`);
-               if (activeSection) {
-                  activeSection.classList.add("active");
-               }
-         
-               // Update active tab
-               tabs.forEach(tab => {
-                  tab.classList.remove("active");
-                  if (tab.getAttribute("data-tab") === tabId) {
-                     tab.classList.add("active");
-                  }
-               });
-            }
-         
-            function handleHashChange(rawHash) {
-               const hash = rawHash.replace("#", "");
-               console.debug("[portfolio] handleHashChange hash:", hash);
-         
-               const tabIds = ["reminders", "management", "testing", "finance", "content", "tools", "parsers"];
-         
-               if (hash && tabIds.includes(hash)) {
-                  // Hash is a tab id
-                  switchTab(hash);
-               } else if (hash && anchorToTabMap[hash]) {
-                  // Hash is an inner anchor – open parent tab first
-                  const parentTabId = anchorToTabMap[hash];
-                  switchTab(parentTabId);
-         
-                  // Scroll to the anchor after the tab is visible
-                  setTimeout(() => {
-                     const target = document.getElementById(hash);
-                     if (target) {
-                        target.scrollIntoView({ behavior: "smooth", block: "start" });
-                     }
-                  }, 0);
-               } else if (!hash) {
-                  switchTab("reminders");
-               }
-            }
-         
-            // Add event handlers for tabs
-            tabs.forEach(tab => {
-               tab.addEventListener("click", function(e) {
-                  e.preventDefault();
-                  const tabId = this.getAttribute("data-tab");
-                  console.debug("[portfolio] tab click:", tabId);
-                  switchTab(tabId);
-         
-                  // Update URL without page reload
-                  window.history.pushState(null, null, `#${tabId}`);
-               });
-            });
-         
-            // Initial load – handle hash (tab or inner anchor)
-            handleHashChange(window.location.hash);
-         
-            // Handle hash change in URL (e.g., links like #progress-reporter-agent)
-            window.addEventListener("hashchange", function() {
-               handleHashChange(window.location.hash);
-            });
-         });
-      </script>
-      <script>
-         document.getElementById("year").textContent = new Date().getFullYear();
-      </script>
+      <script src="js/portfolio.js"></script>
    </body>
 </html>
