@@ -41,17 +41,205 @@ function resetMermaidZoom(button) {
 document.addEventListener("DOMContentLoaded", function() {
    console.debug("[portfolio] DOMContentLoaded fired");
 
-   // Initialize Mermaid
+   // Store graph definitions for all mermaid diagrams (including pre-wrapped ones)
+   const allMermaidDivs = document.querySelectorAll(".mermaid");
+   allMermaidDivs.forEach((mermaidDiv) => {
+      if (!mermaidDiv.getAttribute('data-graph-definition')) {
+         const graphDefinition = mermaidDiv.textContent.trim();
+         mermaidDiv.setAttribute('data-graph-definition', graphDefinition);
+         console.debug("[portfolio] Stored graph definition for pre-wrapped mermaid diagram");
+      }
+   });
+
+   // Detect dark theme preference
+   const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+   const mermaidTheme = prefersDark ? 'dark' : 'default';
+   
+   console.debug("[portfolio] Dark theme detected:", prefersDark, "Mermaid theme:", mermaidTheme);
+   
+   // Initialize Mermaid with theme based on system preference
    mermaid.initialize({ 
       startOnLoad: false,
-      theme: 'default',
+      theme: mermaidTheme,
       flowchart: {
          useMaxWidth: true,
          htmlLabels: true,
          curve: 'basis'
-      }
+      },
+      themeVariables: prefersDark ? {
+         primaryColor: '#4a9eff',
+         primaryTextColor: '#ffffff',
+         primaryBorderColor: '#4a9eff',
+         lineColor: '#4a9eff',
+         secondaryColor: '#1e1e1e',
+         tertiaryColor: '#2d2d2d',
+         background: '#1e1e1e',
+         mainBkg: '#1e1e1e',
+         secondBkg: '#2d2d2d',
+         textColor: '#ffffff',
+         edgeLabelBackground: '#2d2d2d',
+         clusterBkg: '#2d2d2d',
+         clusterBorder: '#4a9eff',
+         defaultLinkColor: '#4a9eff',
+         titleColor: '#ffffff',
+         actorBorder: '#4a9eff',
+         actorBkg: '#1e1e1e',
+         actorTextColor: '#ffffff',
+         actorLineColor: '#4a9eff',
+         signalColor: '#4a9eff',
+         signalTextColor: '#ffffff',
+         labelBoxBkgColor: '#1e1e1e',
+         labelBoxBorderColor: '#4a9eff',
+         labelTextColor: '#ffffff',
+         loopTextColor: '#ffffff',
+         noteBorderColor: '#4a9eff',
+         noteBkgColor: '#2d2d2d',
+         noteTextColor: '#ffffff',
+         activationBorderColor: '#4a9eff',
+         activationBkgColor: '#2d2d2d',
+         sequenceNumberColor: '#ffffff',
+         sectionBkgColor: '#2d2d2d',
+         altBkgColor: '#1e1e1e',
+         altBkgColor2: '#2d2d2d',
+         sectionBorderColor: '#4a9eff',
+         sectionBkgColor2: '#1e1e1e',
+         excludeBkgColor: '#1e1e1e',
+         taskBorderColor: '#4a9eff',
+         taskBkgColor: '#2d2d2d',
+         taskTextLightColor: '#ffffff',
+         taskTextColor: '#ffffff',
+         taskTextDarkColor: '#ffffff',
+         taskTextOutsideColor: '#ffffff',
+         taskTextClickableColor: '#4a9eff',
+         activeTaskBorderColor: '#4a9eff',
+         activeTaskBkgColor: '#2d2d2d',
+         gridColor: '#4a9eff',
+         doneTaskBkgColor: '#1e1e1e',
+         doneTaskBorderColor: '#4a9eff',
+         critBorderColor: '#ff6b6b',
+         critBkgColor: '#2d2d2d',
+         taskTextLightColor: '#ffffff',
+         todayLineColor: '#4a9eff',
+         labelColor: '#ffffff'
+      } : {}
    });
-   console.debug("[portfolio] Mermaid initialized");
+   console.debug("[portfolio] Mermaid initialized with theme:", mermaidTheme);
+   
+   // Listen for theme changes
+   if (window.matchMedia) {
+      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+      mediaQuery.addEventListener('change', (e) => {
+         const newTheme = e.matches ? 'dark' : 'default';
+         console.debug("[portfolio] Theme changed to:", newTheme);
+         mermaid.initialize({ 
+            startOnLoad: false,
+            theme: newTheme,
+            flowchart: {
+               useMaxWidth: true,
+               htmlLabels: true,
+               curve: 'basis'
+            },
+            themeVariables: e.matches ? {
+               primaryColor: '#4a9eff',
+               primaryTextColor: '#ffffff',
+               primaryBorderColor: '#4a9eff',
+               lineColor: '#4a9eff',
+               secondaryColor: '#1e1e1e',
+               tertiaryColor: '#2d2d2d',
+               background: '#1e1e1e',
+               mainBkg: '#1e1e1e',
+               secondBkg: '#2d2d2d',
+               textColor: '#ffffff',
+               edgeLabelBackground: '#2d2d2d',
+               clusterBkg: '#2d2d2d',
+               clusterBorder: '#4a9eff',
+               defaultLinkColor: '#4a9eff',
+               titleColor: '#ffffff',
+               actorBorder: '#4a9eff',
+               actorBkg: '#1e1e1e',
+               actorTextColor: '#ffffff',
+               actorLineColor: '#4a9eff',
+               signalColor: '#4a9eff',
+               signalTextColor: '#ffffff',
+               labelBoxBkgColor: '#1e1e1e',
+               labelBoxBorderColor: '#4a9eff',
+               labelTextColor: '#ffffff',
+               loopTextColor: '#ffffff',
+               noteBorderColor: '#4a9eff',
+               noteBkgColor: '#2d2d2d',
+               noteTextColor: '#ffffff',
+               activationBorderColor: '#4a9eff',
+               activationBkgColor: '#2d2d2d',
+               sequenceNumberColor: '#ffffff',
+               sectionBkgColor: '#2d2d2d',
+               altBkgColor: '#1e1e1e',
+               altBkgColor2: '#2d2d2d',
+               sectionBorderColor: '#4a9eff',
+               sectionBkgColor2: '#1e1e1e',
+               excludeBkgColor: '#1e1e1e',
+               taskBorderColor: '#4a9eff',
+               taskBkgColor: '#2d2d2d',
+               taskTextLightColor: '#ffffff',
+               taskTextColor: '#ffffff',
+               taskTextDarkColor: '#ffffff',
+               taskTextOutsideColor: '#ffffff',
+               taskTextClickableColor: '#4a9eff',
+               activeTaskBorderColor: '#4a9eff',
+               activeTaskBkgColor: '#2d2d2d',
+               gridColor: '#4a9eff',
+               doneTaskBkgColor: '#1e1e1e',
+               doneTaskBorderColor: '#4a9eff',
+               critBorderColor: '#ff6b6b',
+               critBkgColor: '#2d2d2d',
+               taskTextLightColor: '#ffffff',
+               todayLineColor: '#4a9eff',
+               labelColor: '#ffffff'
+            } : {}
+         });
+         
+         // Re-render all visible mermaid diagrams
+         const visibleMermaidDivs = document.querySelectorAll('.flow-diagram-content.active .mermaid');
+         if (visibleMermaidDivs.length > 0) {
+            visibleMermaidDivs.forEach((div, index) => {
+               const graphDefinition = div.getAttribute('data-graph-definition');
+               if (graphDefinition) {
+                  // Restore original text content for re-rendering
+                  div.textContent = graphDefinition;
+                  const id = 'mermaid-' + Date.now() + '-' + index;
+                  div.id = id;
+                  
+                  // Re-initialize zoom attributes
+                  div.setAttribute('data-zoom', '1');
+                  div.setAttribute('data-translate-x', '0');
+                  div.setAttribute('data-translate-y', '0');
+                  div.style.transform = 'translate(0, 0) scale(1)';
+                  div.style.transformOrigin = 'top left';
+                  
+                  // Update zoom info
+                  const container = div.closest('.mermaid-container');
+                  if (container) {
+                     const zoomInfo = container.querySelector('.mermaid-zoom-info');
+                     if (zoomInfo) {
+                        zoomInfo.textContent = '100%';
+                     }
+                  }
+                  
+                  mermaid.render(id, graphDefinition).then((result) => {
+                     div.innerHTML = result.svg;
+                     div.setAttribute('data-zoom', '1');
+                     div.setAttribute('data-translate-x', '0');
+                     div.setAttribute('data-translate-y', '0');
+                     div.style.transform = 'translate(0, 0) scale(1)';
+                     div.style.transformOrigin = 'top left';
+                     console.debug("[portfolio] Mermaid diagram re-rendered with new theme");
+                  }).catch((err) => {
+                     console.error("[portfolio] Error re-rendering mermaid diagram:", err);
+                  });
+               }
+            });
+         }
+      });
+   }
 
    // Handle flow diagram toggles
    const toggles = document.querySelectorAll(".flow-diagram-toggle");
@@ -82,6 +270,13 @@ document.addEventListener("DOMContentLoaded", function() {
             if (mermaidDivs.length > 0) {
                // Wrap mermaid divs that don't have container yet (before mermaid.init)
                mermaidDivs.forEach((mermaidDiv, index) => {
+                  // Store original graph definition before rendering
+                  if (!mermaidDiv.getAttribute('data-graph-definition')) {
+                     const graphDefinition = mermaidDiv.textContent.trim();
+                     mermaidDiv.setAttribute('data-graph-definition', graphDefinition);
+                     console.debug("[portfolio] Stored graph definition for mermaid diagram", index);
+                  }
+                  
                   if (!mermaidDiv.closest('.mermaid-container')) {
                      const container = document.createElement('div');
                      container.className = 'mermaid-container';
